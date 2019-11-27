@@ -3,6 +3,7 @@ import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Grid } from "semantic-ui-react";
 import Homepage from "./components/homepage/Homepage";
+import Portfolio from "./components/portfolio/Portfolio";
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
           <Grid.Column>
             <Switch>
               <Route exact path="/" component={Homepage} />
+              <Route path="/portfolio" component={Portfolio} />
             </Switch>
           </Grid.Column>
         </div>

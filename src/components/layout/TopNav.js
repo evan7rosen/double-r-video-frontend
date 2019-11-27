@@ -10,7 +10,7 @@ export const TopNav = props => (
     <Link to={"/locations"}>
       <Menu.Item>Services</Menu.Item>
     </Link>
-    <Link to={"/inventory"}>
+    <Link to={"/portfolio"}>
       <Menu.Item>Portfolio</Menu.Item>
     </Link>
     <Link to={"/inventory"}>
