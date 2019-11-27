@@ -7,7 +7,7 @@ export const TopNav = props => (
     <Link to={"/"}>
       <Menu.Item>Home</Menu.Item>
     </Link>
-    <Link to={"/locations"}>
+    <Link to={"/services"}>
       <Menu.Item>Services</Menu.Item>
     </Link>
     <Link to={"/portfolio"}>
@@ -19,7 +19,7 @@ export const TopNav = props => (
     <Link to={"/inventory"}>
       <Menu.Item>Contact</Menu.Item>
     </Link>
-    <Link to={"/inventory"}>
+    <Link to={"/videos"}>
       <Menu.Item>View Your Videos</Menu.Item>
     </Link>
   </Menu>
