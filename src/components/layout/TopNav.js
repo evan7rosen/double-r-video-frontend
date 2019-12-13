@@ -7,20 +7,17 @@ export const TopNav = props => (
     <Link to={"/"}>
       <Menu.Item>Home</Menu.Item>
     </Link>
-    <Link to={"/services"}>
-      <Menu.Item>Services</Menu.Item>
-    </Link>
     <Link to={"/portfolio"}>
       <Menu.Item>Portfolio</Menu.Item>
     </Link>
-    <Link to={"/inventory"}>
-      <Menu.Item>About</Menu.Item>
-    </Link>
-    <Link to={"/inventory"}>
+    <Link to={"/contact"}>
       <Menu.Item>Contact</Menu.Item>
     </Link>
     <Link to={"/videos"}>
       <Menu.Item>View Your Videos</Menu.Item>
+    </Link>
+    <Link to={"/admin"}>
+      <Menu.Item>Admin Portal</Menu.Item>
     </Link>
   </Menu>
 );

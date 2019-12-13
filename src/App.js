@@ -8,7 +8,8 @@ import { Grid } from "semantic-ui-react";
 import Homepage from "./components/homepage/Homepage";
 import Portfolio from "./components/portfolio/Portfolio";
 import Videos from "./components/videos/Videos";
-import Services from "./components/services/Services";
+import Contact from "./components/contact/Contact";
+import Admin from "./components/admin/layout/Admin";
 
 import { fetchAllUsers } from "./store/users/actions";
 import { fetchAllVideos } from "./store/videos/actions";
@@ -17,6 +18,7 @@ class App extends React.Component {
   componentDidMount() {
     this.props.fetchAllUsers();
     this.props.fetchAllVideos();
+    console.log(this.props);
   }
 
   render() {
@@ -28,7 +30,8 @@ class App extends React.Component {
               <Route exact path="/" component={Homepage} />
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/videos" component={Videos} />
-              <Route path="/services" component={Services} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/admin" component={Admin} />
             </Switch>
           </Grid.Column>
         </div>
@@ -39,8 +42,8 @@ class App extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    cars: state.cars,
-    locations: state.locations
+    users: state.users,
+    videos: state.videos
   };
 };
 

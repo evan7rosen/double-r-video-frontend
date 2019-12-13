@@ -16,7 +16,7 @@ export const VideosHeader = () => (
     />
     <Header
       as="h2"
-      content="Your Purchased Videos"
+      content="Your Videos"
       inverted
       style={{
         fontSize: "1.7em",
